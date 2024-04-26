@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>lesson 20</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+  <body>
+    <button class="btn" id="open-reg-form">New User</button>
+    <section>
+      <div class="userinfo">
+        <table class="table" id="data_table">
+          <tbody>
+            <tr>
+              <td>ID</td>
+              <td>Name</td>
+              <td>Surname</td>
+              <td>Email</td>
+              <td>Phone</td>
+              <td>ID Number</td>
+              <td>ZIP Code</td>
+              <td>Gender</td>
+              <td>Action</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="modal" id="reg-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3></h3>
+            <button class="btn delete modal-close">X</button>
+          </div>
+          <div class="modal-body">
+            <form class="form" id="reg" action="#" method="#">
+              <input id="user_id" type="hidden" placeholder="" value="" />
+              <div class="input-field">
+                <label for="user_name">Enter user name</label>
+                <input
+                  type="text"
+                  id="user_name"
+                  placeholder="user name"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <label for="user_surname">Enter user surname</label>
+                <input
+                  type="text"
+                  id="user_surname"
+                  placeholder="user surname"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="user_phone">Enter user email</label>
+                <input
+                  type="email"
+                  id="user_email"
+                  placeholder="email"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="user_personal-id">Enter user phone number</label>
+                <input
+                  type="number"
+                  id="user_phone"
+                  placeholder="number"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="user_email">Enter user ID number</label>
+                <input
+                  type="number"
+                  id="user_personal-id"
+                  placeholder="number"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="user_zip-code">Enter user zip code</label>
+                <input
+                  type="text"
+                  id="user_zip-code"
+                  placeholder="zip code"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="user_gender">Enter user gender</label>
+                <input
+                  type="text"
+                  id="user_gender"
+                  placeholder="gender"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <button class="btn" id="register" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="edit-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3></h3>
+            <button class="btn delete modal-close">X</button>
+          </div>
+          <div class="modal-body">
+            <form class="form" id="edit" action="#" method="#">
+              <input id="user_id" type="hidden" placeholder="" value="" />
+
+              <div class="input-field">
+                <label for="user_name">Enter user name</label>
+                <input
+                  type="text"
+                  id="user_name"
+                  placeholder="user name"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <label for="user_surname">Enter user surname</label>
+                <input
+                  type="text"
+                  id="user_surname"
+                  placeholder="user surname"
+                  required
+                />
+              </div>
+
+                <div class="input-field">
+                <label for="user_email">Enter user email</label>
+                <input
+                  type="email"
+                  id="user_email"
+                  placeholder="email"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="user_phone">Enter user phone number</label>
+                <input
+                  type="number"
+                  id="user_phone"
+                  placeholder="phone number"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="user_personal-id">Enter user ID number</label>
+                <input
+                  type="number"
+                  id="user_personal-id"
+                  placeholder="personal id"
+                  required
+                />
+              </div>
+
+
+              <div class="input-field">
+                <label for="user_zip-code">Enter user zip code</label>
+                <input
+                  type="text"
+                  id="user_zip-code"
+                  placeholder="zip code"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="user_gender">Enter user gender</label>
+                <input
+                  type="text"
+                  id="user_gender"
+                  placeholder="gender"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <button class="btn" id="register" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+  </body>
+</html>
